@@ -11,25 +11,25 @@ public class MemberVO {
 	 private String phone;
 	 public MemberVO() {   }
 	 
-	public MemberVO(String id, String pass, String name, int age, String email, String phone) {
-		super();
-		this.id = id;
-		this.pass = pass;
-		this.name = name;
-		this.age = age;
-		this.email = email;
-		this.phone = phone;
-	}
-	public MemberVO(int num, String id, String pass, String name, int age, String email, String phone) {
-		super();
-		this.num = num;
-		this.id = id;
-		this.pass = pass;
-		this.name = name;
-		this.age = age;
-		this.email = email;
-		this.phone = phone;
-	}
+//	public MemberVO(String id, String pass, String name, int age, String email, String phone) {
+//		super();
+//		this.id = id;
+//		this.pass = pass;
+//		this.name = name;
+//		this.age = age;
+//		this.email = email;
+//		this.phone = phone;
+//	}
+//	public MemberVO(int num, String id, String pass, String name, int age, String email, String phone) {
+//		super();
+//		this.num = num;
+//		this.id = id;
+//		this.pass = pass;
+//		this.name = name;
+//		this.age = age;
+//		this.email = email;
+//		this.phone = phone;
+//	}
 	public int getNum() {
 		return num;
 	}
