@@ -5,7 +5,7 @@
 <mapper namespace="mapper.member">
 
 	<resultMap id="member"
-		type="com.basic.projectbook.vo.Member">
+		type="com.basic.projectbook.vo.MemberVO">
 		<id property="no" column="no" />
 		<result property="name" column="name" />
 		<result property="id" column="id" />

@@ -8,14 +8,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.basic.projectbook.dao.MemberDAO;
-import com.basic.projectbook.vo.Member;
+import com.basic.projectbook.vo.MemberVO;
 
 public class MainController implements Controller{
 
 	@Override
 	public String service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		List<Member> list = MemberDAO.getInstance().getAllMember();
+		List<MemberVO> list = MemberDAO.getInstance().getAllMember();
 		System.out.println(list);
 		request.setAttribute("list", list);
 		

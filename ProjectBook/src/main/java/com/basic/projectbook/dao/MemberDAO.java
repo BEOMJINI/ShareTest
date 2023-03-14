@@ -5,7 +5,7 @@ import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 
 import com.basic.projectbook.util.MybatisConfig;
-import com.basic.projectbook.vo.Member;
+import com.basic.projectbook.vo.MemberVO;
 
 public class MemberDAO {
 	private MemberDAO() {}
@@ -14,16 +14,16 @@ public class MemberDAO {
 		return instance;
 	}
 	
-	public List<Member> getAllMember() {
+	public List<MemberVO> getAllMember() {
 		SqlSession session = MybatisConfig.getInstance().openSession(true);
-		List<Member> list = session.selectList("mapper.member.getAllMember");
+		List<MemberVO> list = session.selectList("mapper.member.getAllMember");
 		session.close();
 		return list;
 	}
 	
-	public Member getOneMember(String id) {
+	public MemberVO getOneMember(String id) {
 		SqlSession session = MybatisConfig.getInstance().openSession(true);
-		Member vo = session.selectOne("mapper.member.getOneMember", id);
+		MemberVO vo = session.selectOne("mapper.member.getOneMember", id);
 		return vo;
 	}
 	
